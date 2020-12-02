@@ -1,0 +1,316 @@
+body{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #333;
+    /* cursor: pointer; */
+    user-select: none;
+
+
+    /* Phone Palette */
+    --Midnight-Express: #1F2331;
+    --Blue-Zodiac: #44455C;
+
+
+    /* ANDROID Palette */
+    --Nero: #181818;
+    --Shady-Lady: #969696;
+    --White: #FFFFFF;
+
+
+    /* Viber Palette */
+    --Main-Purple:#7360f2;
+    --Red:  #f4447a;
+    --Highlight-Yellow: #fbe75e;
+    --Background-Yellow: #fbcf5e;
+    --Highlight-Blue: #00d8ff;
+    --Background-Blue: #00c1f9;
+    --Viber-Dark-Gray: #4A4A4A;
+    --Viber-Gray: #B0B0B0;
+    --White: #FFFFFF;
+    --Black: #000000;
+
+    --Height: 1136px;
+    --Width: 640px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.mockPhone{
+    background-color: var(--Midnight-Express);
+    transform: scale(0.8);
+    display: inline-block;
+    padding: 60px 30px 90px 30px;
+    border-radius: 7%;
+    
+}
+.mockPhone .speaker{
+    position: absolute;
+    height: 8px;
+    width: 140px;
+    background-image: radial-gradient(rgb(63, 45, 45), black );
+    border-radius: 10%;
+    top: 30px;
+    left: 280px
+}
+.mockPhone .cam{
+    position: absolute;
+    height: 25px;
+    border-radius: 100%;
+    width: 25px;
+    background-color: var(--Blue-Zodiac);
+    box-shadow: inset 0px 0px 5px 3px;
+    top: 20px;
+    left: 490px;
+}
+.mockPhone .cam::before{
+    content: "";
+    position: absolute;
+    height: 20px;
+    border-radius: 100%;
+    width: 20px;
+    background-color: var(--Blue-Zodiac);
+    box-shadow: inset 0px 0px 5px 3px;
+    left: 33px;
+    top: 3px;
+}
+
+.mockPhone .button-vol{
+    position: absolute;
+    height: 120px;
+    width: 10px;
+    background-color:var(--Midnight-Express);
+    border-radius: 0px 50px 50px 0px;
+    left: 697px;
+    top: 312px;
+}
+.mockPhone .button-vol::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    background-color: var(--Blue-Zodiac);
+    top: 60px;
+}
+.mockPhone .button-power{
+    height: 70px;
+    width: 10px;
+    background:linear-gradient(to right, var(--Midnight-Express) 90%, red 1%);
+    border-radius: 0px 50px 50px 0px;
+    position: absolute;
+    left: 697px;
+    top: 440px;
+}
+
+.mockPhone .screen{
+    width: var(--Width);
+    height: var(--Height);
+    
+}
+
+.mockPhone .android{
+    height: inherit;
+    width: inherit;
+    position: relative;
+}
+.android-app{
+    width: inherit;
+    height: 2%;
+    background-color:var(--White);
+    position: fixed;
+    top: 60px;
+    border-bottom: 1px solid transparent;
+}
+.android-app .fas{
+    font-size: 22px;
+    padding-top: 2px;
+    padding-right: 5px;
+    float: right;
+    color: var(--Shady-Lady);
+}
+
+/* VIBER APP */ 
+#viber-app{
+    background-color: var(--White);
+    height: 100%;
+    width: 100%;
+    
+}
+
+#viber-app header{
+    height: 6.8%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--White);
+    top: 2%;
+    border-bottom: 0.5px solid var(--Viber-Gray);
+}
+#viber-app header h1{
+    font-size: 2em;
+    color: var(--Black);
+    position: absolute;
+    top:0.7em;
+    left: 1em;
+}
+#viber-app header .fa-search{
+    font-size: 1.7em;
+    float: right;
+    padding-top: 1em;
+    color: var(--Main-Purple);
+    padding-right: 0.7em;
+}
+
+#viber-app section{
+    height: 83%;
+    width: 100%;
+    background-color: var(--White);
+    position: relative;
+    top: 9%;
+}
+
+#viber-app footer{
+    height: 6.5%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--White);
+    bottom: 0;
+    border-top: 0.5px solid var(--Viber-Gray);
+}
+
+#viber-app .contacts{
+    height: 100%;
+    background-color: var(--White);
+}
+#viber-app .contacts li{
+    height: calc(100%/8);
+    /* border-top: 1px solid var(--Viber-Dark-Gray); */
+    border-bottom: 1px solid var(--Viber-Dark-Gray);
+    box-sizing: border-box;
+}
+#viber-app .contacts li:last-child{
+    border-bottom: none;
+}
+
+.contacts .contact{
+    position: relative;
+}
+.contacts .contact img{
+    height: 5em;
+    border: 1px solid black;
+    border-radius: 25%;
+    float: left;
+    margin: 1em;
+    background-color: #fff;
+}
+.contacts .contact h2{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--Black);
+    position: absolute;
+    top: 1em;
+    left: 5em;
+}
+
+.contacts .contact p{
+    color: var(--Viber-Gray);
+    position: absolute;
+    top: 3em;
+    left: 7em;
+
+}
+
+.data .status{
+    font-size: 0.9em;
+    padding-top: 1.8em;
+    padding-right: 0.3em;
+    float: right;
+    color: var(--Shady-Lady);
+}
+#viber-app ul li:first-child .status{
+    color: var(--Shady-Lady);
+}
+#viber-app ul li:nth-child(2) .status{
+    color: var(--Main-Purple);
+}
+#viber-app ul li:nth-child(3) .status{
+    color: var(--Shady-Lady);
+}
+#viber-app ul li:nth-child(4) .status{
+    color: var(--Main-Purple);
+}
+
+.data .time{
+    font-size: 1em;
+    padding-top: 0.8em;
+    padding-right: 0.6em;
+    float: right;
+    color: var(--Shady-Lady);
+}
+.data .count{
+    border-radius: 100%;
+    color: var(--White);
+    height: 1em;
+    width: 1em;
+    font-size: 1em;
+    padding: 0.2em;
+    float: right;
+    margin-top: 2.8em;
+    margin-right: -3.4em;
+    text-align: center;
+}
+
+#viber-app ul li:first-child .count{
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: var(--Main-Purple);
+    color: var(--White);
+}
+#viber-app ul li:nth-child(3) .count{
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 1.5em;
+    background-color: var(--Main-Purple);
+    color: var(--White);
+}
+
+footer{
+    display: table;
+    text-align: center;
+    padding-top: 1em;
+}
+footer .fas{
+    font-size: 2em;
+    padding-bottom: 0.1em;
+        color: var(--Viber-Gray);
+}
+footer a:first-child .fas{
+
+    color: var(--Main-Purple);
+}
+footer h3{
+    font-size: 1em;
+    color: var(--Shady-Lady);
+}
+footer a{
+    display: table-cell;
+
+}
+
+footer a:last-child{
+    position: fixed;
+    border-radius: 100%;
+    right: 2.5em;
+    bottom: 12em;
+    background-color: var(--Main-Purple);
+    width: 7em;
+    height: 7em;
+    color: var(--White);
+
+}
+footer a:last-child .fas{
+    color: var(--White);
+    font-size: 3em;
+    position: absolute;
+    top: 0.67em;
+    right: 0.65em;
+}
