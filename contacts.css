@@ -115,7 +115,7 @@ a{
 }
 .android-app{
     width: inherit;
-    height: 2%;
+    height: 3%;
     background-color:var(--White);
     position: fixed;
     top: 60px;
@@ -123,7 +123,7 @@ a{
 }
 .android-app .fas{
     font-size: 22px;
-    padding-top: 2px;
+    padding-top: 11px;
     padding-right: 5px;
     float: right;
     color: var(--Shady-Lady);
@@ -138,11 +138,11 @@ a{
 }
 
 #viber-app header{
-    height: 6.8%;
+    height: 5.8%;
     width: 100%;
     position: absolute;
     background-color: var(--White);
-    top: 2%;
+    top: 3%;
     border-bottom: 0.5px solid var(--Viber-Gray);
 }
 #viber-app header h1{
@@ -278,6 +278,11 @@ footer{
     text-align: center;
     padding-top: 1em;
 }
+footer h4{
+    font-size: 1em;
+    color: var(--Shady-Lady);
+    padding-top: 0.2em;
+}
 footer .fas{
     font-size: 2em;
     padding-bottom: 0.1em;
@@ -287,10 +292,11 @@ footer a:first-child .fas{
 
     color: var(--Main-Purple);
 }
-footer h3{
-    font-size: 1em;
-    color: var(--Shady-Lady);
+footer a:first-child h4{
+
+    color: var(--Main-Purple);
 }
+
 footer a{
     display: table-cell;
 
