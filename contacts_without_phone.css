@@ -36,7 +36,7 @@ a{
     text-decoration: none;
 }
 /* Phone */
-.mockPhone{
+/* .mockPhone{
     background-color: var(--Midnight-Express);
     transform: scale(0.8);
     display: inline-block;
@@ -127,7 +127,7 @@ a{
     padding-right: 5px;
     float: right;
     color: var(--Shady-Lady);
-}
+} */
 
 /* VIBER APP */ 
 #viber-app{
